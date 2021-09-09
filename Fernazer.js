@@ -404,8 +404,8 @@ frnzer.on('chat-update', async (frnazer) => {
 				}
 			}
 		    const botNumber = frnzer.user.jid
-			const ownerNumber = ["6281328139682@s.whatsapp.net"] // Nomor Owner Bre
-			const ownerContact = ["6281328139682","6285725486855"] // Nomor Owner Bre
+			const ownerNumber = ["6285888258313@s.whatsapp.net"] // Nomor Owner Bre
+			const ownerContact = ["6285888258313","6285888258313"] // Nomor Owner Bre
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await frnzer.chats.all()
 			const sender = isGroup ? frnazer.participant : frnazer.key.remoteJid
@@ -694,7 +694,7 @@ let settingstatus = 0;
     if (new Date() * 1 - settingstatus > 1000) {
       let _uptime = process.uptime() * 1000;
       let uptime = clockString(_uptime);
-      await frnzer.setStatus(`Aktif selama ${uptime} | Mode: Public | User Fernazer`).catch((_) => _);
+      await frnzer.setStatus(`Aktif selama ${uptime} | Mode: Public | User Lolita`).catch((_) => _);
       settingstatus = new Date() * 1;
     }        
  
@@ -759,8 +759,8 @@ if (m.message && m.isBaileys && m.quoted && m.quoted.mtype === 'orderMessage' &&
 			const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
 			const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
              
-            if (!isGroup && isCmd) console.log(color(time, "white"), color("[ FERNAZER ]", "aqua"), color(budy, "white"), "from", color(sender.split('@')[0], "yellow"))
-            if (isGroup && isCmd) console.log(color(time, "white"), color("[ FERNAZER ]", "aqua"), color(budy, "white"), "from", color(sender.split('@')[0], "yellow"), "in", color(groupName, "yellow"))
+            if (!isGroup && isCmd) console.log(color(time, "white"), color("[ TRITO ]", "aqua"), color(budy, "white"), "from", color(sender.split('@')[0], "yellow"))
+            if (isGroup && isCmd) console.log(color(time, "white"), color("[ TRITO ]", "aqua"), color(budy, "white"), "from", color(sender.split('@')[0], "yellow"), "in", color(groupName, "yellow"))
             
 			switch(command) {
 // Case By Fernazer
@@ -955,30 +955,28 @@ fernazer =
  >
  $
  =>`
- frnzer.send3Button(from, fernazer, `Time : ${time} ~Fernazer`, 'OWNER', `${prefix}owner`, 'SCRIPT BOT', `${prefix}sourcecode`,'INFO BOT',`${prefix}info` , { quoted: faketroli ,contextInfo: {"mentionedJid": [sender]}})
+ frnzer.send3Button(from,fernazer, `Time : ${time} ~TRITO`, 'OWNER', `${prefix}owner`, 'SCRIPT BOT', `${prefix}sourcecode`,'INFO BOT',`${prefix}info` , { quoted: faketroli ,contextInfo: {"mentionedJid": [sender]}})
  break
  
  case 'menu':
  let tod = fs.readFileSync('./media/Fernazer.jpg')
- frnzer.sendMessage(from, { contentText: `Hai, ${userfernazer} ${ucapanWaktu}`, footerText: 'Rules Bot\n\nTlpn/Vc = Blok\n\nSosmed\ngithub: https://github.com/Fernazer\nYt: https://youtube.com/Fernazer\n\nMy Web: https://fernazer-xyz.mn.co/\n Wa: https://wa.me/6281328139682\n\nTQTQ\nHega\nAjis Js\nRudi Achil\nFernazer\nPak Dihan\n\nFernazerBot By Rafli', buttons: [{ buttonId: `${prefix}menu2`, buttonText: { displayText: 'MENU BOT' }, type: 1 },{ buttonId: `${prefix}loli`, buttonText: { displayText: 'LOMLI' }, type: 1 }], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: tod, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+ frnzer.sendMessage(from, { contentText: `Hai, ${userfernazer} ${ucapanWaktu}`, footerText: 'Rules Bot\n\nTlpn/Vc = Blok\n\nSosmed\ngithub: https://github.com/Tritoapriansyah\n\nTQTQ\nHega\nAjis Js\nRudi Achil\nFernazer\nPak Dihan\n\nLOLITABot By TRITO', buttons: [{ buttonId: `${prefix}menu2`, buttonText: { displayText: 'MENU BOT' }, type: 1 },{ buttonId: `${prefix}loli`, buttonText: { displayText: 'LOMLI' }, type: 1 }], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: tod, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
  break
 			   
 case 'info':
-fernazer = `*Info Owner*
+TRITO = `*Info Owner*
 
-• Name: *Rafli Maulan N*
-• Age: *17*
-• Class: *11 SMK*
+• Name: *TRITO APRIANSYAH*
+• Age: *15*
+• Class: *10 SMK*
 • Hobby: *Coding Script*
 
 *Sosial Media*
 
-• Instagram: @rafli_fernazer
-• Github: https://github.com/Fernazer
-• Yt: https://youtube.com/Fernazer
+• Github: https://github.com/Tritoapriansyah
 
  *BOT INFO*`
-frnzer.sendButton(from,fernazer,'Creator: Fernazer','KEMBALI KE MENU↩️',`${prefix}menu2`,{quoted: faketroli})
+frnzer.sendButton(from,fernazer,'Creator: TRITO','KEMBALI KE MENU↩️',`${prefix}menu2`,{quoted: faketroli})
 break
 case 'tr':
 case 'translate':
@@ -1083,7 +1081,7 @@ case 'addcmd':
               if (!q) return reply(`Penggunaan : ${command} cmdnya dan tag stickernya`)
               var kodenya = frnazer.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString('base64')
               addCmd(kodenya, q)
-              reply("Done Jangan Lupa Subrek Fernazer\n\nLink Yt: https://youtube.com/Fernazer!")
+              reply("Done Jangan Lupa DONASI agar bot makin berkembang")
               } else {
               reply('tag stickenya')
 }
@@ -1093,7 +1091,7 @@ case 'addcmd':
               var kodenya = frnazer.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString('base64')
             _scommand.splice(getCommandPosition(kodenya), 1)
               fs.writeFileSync('./database/scommand.json', JSON.stringify(_scommand))
-              reply("Done Jangan Lupa Subrek Fernazer\n\nLink Yt: https://youtube.com/Fernazer!")            
+              reply("Done Jangan Lupa  DONASI agar bot makin berkembang")            
               break
        case 'listcmd':
               let teksnyee = `\`\`\`「 LIST STICKER CMD 」\`\`\``
@@ -1441,7 +1439,7 @@ inifernazer =
 • runtime: ${runtime(process.uptime())}
 
 *Speed* > ${latensii.toFixed(4)} Second!`
-frnzer.sendButton(from,inifernazer,'Creator: Fernazer','KEMBALI KE MENU↩️',`${prefix}menu2`,{quoted: faketroli})
+frnzer.sendButton(from,inifernazer,'Creator: TRITO','KEMBALI KE MENU↩️',`${prefix}menu2`,{quoted: faketroli})
 break
 case 'owner':
 if (isBanned) return reply(mess.only.benned)    
@@ -2057,7 +2055,8 @@ let pe = await frnzer.prepareMessageFromContent(from, msg.message.viewOnceMessag
             
 await frnzer.relayWAMessage(pe)
 console.log(color('WARNING: ANTIVIEW ONCE','red'))
-}		
+}
+		
 	   
 if (fs.existsSync(`./tmp/${from}.json`)) {
 	gelutSkuy = setGelud(`${from}`)
